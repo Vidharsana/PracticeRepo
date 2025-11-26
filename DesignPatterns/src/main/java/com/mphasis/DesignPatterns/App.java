@@ -44,12 +44,33 @@ public class App {
 //    	
 //    	System.out.println(pizza);
     	
+    	//template method pattern---behavioral
+//    	DrinkMaker tea=new TeaMaker();
+//    	tea.prepareDrink();
+//    	
+//    	DrinkMaker coffee=new CoffeeMaker();
+//    	coffee.prepareDrink();
     	
-    	DrinkMaker tea=new TeaMaker();
-    	tea.prepareDrink();
+    	//Structural Pattern
     	
-    	DrinkMaker coffee=new CoffeeMaker();
-    	coffee.prepareDrink();
+    	//bridge pattern
     	
+//    	Video youtubeHd=new Youtube(new HDProcessing());
+//    	youtubeHd.playVideo();
+//    	
+//    	Video youtube4k=new Youtube(new FourKProcessing());
+//    	youtube4k.playVideo();
+//    	
+//    	Video primeHd=new PrimeChannel(new HDProcessing());
+//    	primeHd.playVideo();
+//    	
+    	
+    	
+    	//proxy pattern
+    	Payment netbanking=new NetBanking();
+    	netbanking.pay(5000);
+    	System.out.println("********************************");
+    	Payment upi=new UpiPayment();
+    	upi.pay(7000);
     }
 }
